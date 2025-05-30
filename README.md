@@ -56,6 +56,8 @@
 
 -  docker image and container are also created . by using commands .
 
+-  Actually Nginx image am taken from dockerhub .
+
 - COMMAND : docker images - To check the list of images .
 
 - COMMAND : docker ps - To check the list of containers .
@@ -64,7 +66,7 @@
 
 - 1234 is a port number by giving in main.tf file .
 
-- COMMAND : terraform state list - this command is works on how many live infras are creted .
+- COMMAND : terraform state list - this command is works on how many live infras are created .
 
 
 
