@@ -1,5 +1,44 @@
 # TASK-3 EXPLANATION
 
-#STEP-1: Am taking a new server with server configurations like server_name, AMI: Amazon linux kernel 5.10, instance_type: t2.micro, key_pair, security_group: all traffic, EBS: 8GIB.
+#STEP-1: Am taking a new server with server configurations like server_name, AMI: Amazon linux kernel 5.10, instance_type: t2.micro, key_pair, security_group: all traffic, EBS: 8GIB.  After am connecting with server through SSH.
 
-- After 
+- COMMAND: sudo -i - To change the Root user.
+
+- After am installing terraform. By using commands.
+
+- COMMAND: sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo .
+
+- COMMAND: sudo yum -y install terraform .
+
+- Next am installing Docker. By using commands.
+
+- COMMAND: yum install docker -y - To install the docker .
+
+- Next docker install completed . After to start the docker service by using commands .
+
+- COMMAND: systemctl start docker - To start the docker .
+
+- COMMAND: systemctl status docker - To check the status .
+
+- SO, Terraform and Docker installation is completed .
+
+- Now am creating a Infrastructure with Terraform . writing a terraform code to create a container .
+
+- Now am creating a NEW FILE touch provider.tf .
+
+- In this file provider.tf The docker provider is used to interact with docker containers and images .
+
+- Am creating a Another File touch main.tf .
+
+- In this File main.tf the docker image and docker container Resources are created .
+
+- After docker image and container is created . To check by using commands .
+
+- COMMAND: docker images - To check the list of images .
+
+- COMMAND: docker ps - To check the list of containers .
+
+
+
+
+
