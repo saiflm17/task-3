@@ -48,18 +48,23 @@
 - TERRAFORM APPLY : Execute terraform apply to apply the changes outlined in the plan. Terraform makes the necessary API calls to create, update, or delete 
                     resources to align the infrastructure with the desired state.
 
-- TERRAFORM DESTROY : When infrastructure is no longer needed, or for testing purposes, run terraform destroy to tear down all resources created by Terraform. This 
-                      is irreversible, so use with caution.
+- TERRAFORM DESTROY : When infrastructure is no longer needed, or for testing purposes, run terraform destroy to tear down all resources created by Terraform. 
 
-- After resources are creted then docker image and container also created . To check by using commands .
+- After resources are creted then terraform.tfstate a file is created .
+
+- terraform.tfstate : IT IS A LIVE INFRA STATEFILE .
+
+-  docker image and container are also created . by using commands .
 
 - COMMAND : docker images - To check the list of images .
 
 - COMMAND : docker ps - To check the list of containers .
 
-- After accessible nginx webserver with publicIP:1234 .
+- After accessing nginx webserver with publicIP:1234 .
 
 - 1234 is a port number by giving in main.tf file .
+
+- COMMAND : terraform state list - this command is works on how many live infras are creted .
 
 
 
