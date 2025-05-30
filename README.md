@@ -30,13 +30,36 @@
 
 - Am creating a Another File touch main.tf .
 
-- In this File main.tf the docker image and docker container Resources are created .
+- In this File main.tf the docker image and docker container Resources are creating by using commands .
 
-- After docker image and container is created . To check by using commands .
+- COMMAND : terraform init .
+
+- COMMAND : terraform plan .
+
+- COMMAND : terraform apply --auto-approve .
+
+- COMMAND : terraform destroy --auto-approve .
+
+- TERRAFORM INIT : Run terraform init to initialize a terraform working directory .
+
+- TERRAFORM PLAN : Run terraform plan to create an execution plan . Terraform compares the desired state from the configuration with the current state and 
+                   generates a plan for the changes required to reach the desired state.
+
+- TERRAFORM APPLY : Execute terraform apply to apply the changes outlined in the plan. Terraform makes the necessary API calls to create, update, or delete 
+                    resources to align the infrastructure with the desired state.
+
+- TERRAFORM DESTROY : When infrastructure is no longer needed, or for testing purposes, run terraform destroy to tear down all resources created by Terraform. This 
+                      is irreversible, so use with caution.
+
+- After resources are creted then docker image and container also created . To check by using commands .
 
 - COMMAND : docker images - To check the list of images .
 
 - COMMAND : docker ps - To check the list of containers .
+
+- After accessible nginx webserver with publicIP:1234 .
+
+- 1234 is a port number by giving in main.tf file .
 
 
 
